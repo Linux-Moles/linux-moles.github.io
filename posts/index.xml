@@ -10,19 +10,31 @@
     <atom:link href="https://linux-moles.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Post Title Test</title>
-      <link>https://linux-moles.github.io/posts/post-title/</link>
+      <title>First Steps</title>
+      <link>https://linux-moles.github.io/posts/first-step/</link>
       <pubDate>Mon, 26 Nov 2018 11:40:28 -0500</pubDate>
       
-      <guid>https://linux-moles.github.io/posts/post-title/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis sit amet turpis tincidunt sodales. Ut lacinia rhoncus metus, a ullamcorper ante pretium ac. Etiam sed leo vel orci posuere lobortis efficitur et augue. In lobortis, metus quis consequat consectetur, lorem elit cursus sem, ac vestibulum nisl augue quis justo. Nulla quis eros nulla. Suspendisse non dui ultrices, varius elit eget, malesuada dolor. Vivamus elementum leo quis luctus varius. Aenean non orci quis metus bibendum gravida ut eget purus.</description>
-      <content type="html"><![CDATA[<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis sit amet turpis tincidunt sodales. Ut lacinia rhoncus metus, a ullamcorper ante pretium ac. Etiam sed leo vel orci posuere lobortis efficitur et augue. In lobortis, metus quis consequat consectetur, lorem elit cursus sem, ac vestibulum nisl augue quis justo. Nulla quis eros nulla. Suspendisse non dui ultrices, varius elit eget, malesuada dolor. Vivamus elementum leo quis luctus varius. Aenean non orci quis metus bibendum gravida ut eget purus. Donec rhoncus magna sit amet erat posuere, in accumsan ante sagittis.</p>
+      <guid>https://linux-moles.github.io/posts/first-step/</guid>
+      <description>Hello, in shell echo &amp;quot;Hello World,&amp;quot;. Hello, fellow command line users. First I want to say thank you for visiting this site. This site is for anyone who enjoys working and using the command line aka shell. Soon we are going to add tutorials, talks, news, and man others thing about the command line for any who lives or loves using the command line. Gui is a great interface, but as we know the command line offers more precision and power than any other interface known to humans as this current state.</description>
+      <content type="html"><![CDATA[<p>Hello, in shell <code>echo &quot;Hello World,&quot;</code>. Hello, fellow command line users. First I want to say thank you for visiting this site. This site is for anyone who enjoys working and using the command line aka shell. Soon we are going to add tutorials, talks, news, and man others thing about the command line for any who lives or loves using the command line. Gui is a great interface, but as we know the command line offers more precision and power than any other interface known to humans as this current state. As many say or as you see on the internet &ldquo;Where there is a shell there is a way.&rdquo; Let&rsquo;s explore why this the case, many have argued about GUI and having graphics interface to interact, but there is a reason why we, as a power user, developer, admin or as many walks of life return to the command line. Let discussion quickly a few reasons why, well let&rsquo;s talk why many shy always from this interface.</p>
 
-<p>Aenean finibus nisi est, vel accumsan ex cursus eu. Integer id rhoncus lacus. Aliquam tincidunt commodo molestie. Nulla a vulputate metus, ut auctor lectus. In id pharetra purus, id vulputate nisi. Nullam eu lobortis turpis. Donec dignissim enim augue, ac molestie sem consectetur eget. Phasellus quis justo ac purus feugiat placerat et bibendum neque. Maecenas fringilla justo in fringilla pharetra. Etiam laoreet lobortis mi. Aliquam at elit a elit egestas bibendum non nec leo.</p>
+<ul>
+<li><p>Shell interface requires knowledge of the tools or system your using in which can discourage many.</p></li>
 
-<p>Nullam iaculis dui nunc, sed porttitor elit finibus non. Duis in tristique massa, sed consequat purus. Nunc lobortis accumsan quam sed luctus. Cras purus ligula, laoreet et tortor nec, volutpat viverra ex. Duis ac finibus tellus, quis fermentum risus. Vivamus non congue neque. Donec porttitor enim augue, scelerisque maximus orci hendrerit nec. Suspendisse justo tellus, lobortis eu arcu ut, porttitor vestibulum ex. Suspendisse ac erat at arcu auctor rutrum in eget metus. Integer in est ac neque porttitor dapibus at ut eros.</p>
+<li><p>People find the command line confusing as it needs a user to be explicit in their usages.</p></li>
 
-<p>Pellentesque rutrum consequat erat at mollis. Suspendisse bibendum eget augue non posuere. Phasellus congue eros et sem consectetur egestas. In volutpat convallis nibh nec pellentesque. Nunc id fermentum purus. Sed cursus nisi ac enim tincidunt eleifend. Etiam cursus diam eu vulputate ultricies. Praesent scelerisque ipsum nec nisi fermentum, nec placerat mi aliquet. Etiam accumsan faucibus tellus, id tincidunt nulla mollis sit amet. Curabitur placerat id justo id sagittis. Suspendisse eros massa, pharetra ut suscipit in, varius eu est. Phasellus arcu nibh, iaculis consequat semper a, aliquam id augue. Aenean non libero nec metus pharetra vulputate.</p>
+<li><p>The command line can be very destructive in nature, which can cause a xmajor issue on users who are not familiar.</p></li>
+
+<li><p>Not all shells interface are the same which can confuse many users.</p></li>
+</ul>
+
+<p>Now we realize the challenges with the command line, lets weight out the benefits of using it and why so many returns to it.</p>
+
+<ul>
+<li><p>First, the command line offers in almost all cases, the command line is much faster and easier to use for expirence and pwoer users</p></li>
+
+<li><p>for most complex tasks, the command line or shell can be scripted to automate things</p></li>
+</ul>
 ]]></content>
     </item>
     

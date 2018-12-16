@@ -12,11 +12,29 @@
     
     
     <item>
-      <title>Tag</title>
-      <link>https://linux-moles.github.io/tags/tag/</link>
+      <title>First</title>
+      <link>https://linux-moles.github.io/tags/first/</link>
       <pubDate>Mon, 26 Nov 2018 11:40:28 -0500</pubDate>
       
-      <guid>https://linux-moles.github.io/tags/tag/</guid>
+      <guid>https://linux-moles.github.io/tags/first/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Linux Moles</title>
+      <link>https://linux-moles.github.io/tags/linux-moles/</link>
+      <pubDate>Mon, 26 Nov 2018 11:40:28 -0500</pubDate>
+      
+      <guid>https://linux-moles.github.io/tags/linux-moles/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Start</title>
+      <link>https://linux-moles.github.io/tags/start/</link>
+      <pubDate>Mon, 26 Nov 2018 11:40:28 -0500</pubDate>
+      
+      <guid>https://linux-moles.github.io/tags/start/</guid>
       <description></description>
     </item>
     
