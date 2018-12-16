@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Abouts on Linux Moles</title>
-    <link>https://linuxmoles.com/about/</link>
+    <link>https://linux-moles.github.io/about/</link>
     <description>Recent content in Abouts on Linux Moles</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 26 Nov 2018 12:00:47 -0500</lastBuildDate>
     
-	<atom:link href="https://linuxmoles.com/about/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://linux-moles.github.io/about/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>About Us</title>
-      <link>https://linuxmoles.com/about/about/</link>
+      <link>https://linux-moles.github.io/about/about/</link>
       <pubDate>Mon, 26 Nov 2018 12:00:47 -0500</pubDate>
       
-      <guid>https://linuxmoles.com/about/about/</guid>
+      <guid>https://linux-moles.github.io/about/about/</guid>
       <description>About Linux Moles Who or What is Linux Moles LinuxMole website is for CLI junkies, enthusiasm user, power user, developer or anyone who love the Linux and the command line world aka the shell. Linux, because its the most open and used OS in the world. Moles, because we live in the tunnels (ssh, terminal, and text world) where we dig into place were most normal don&amp;rsquo;t venture and what proper input.</description>
     </item>
     
