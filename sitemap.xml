@@ -3,64 +3,45 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://linux-moles.github.io/about/about/</loc>
-    <lastmod>2018-11-26T12:00:47-05:00</lastmod>
+    <loc>http://linuxbytes.github.io/archives/older-post/</loc>
+    <lastmod>2018-12-04T22:17:34-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://linux-moles.github.io/posts/first-step/</loc>
-    <lastmod>2018-11-26T11:40:28-05:00</lastmod>
+    <loc>http://linuxbytes.github.io/about/</loc>
+    <lastmod>2018-12-04T22:02:58-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://linux-moles.github.io/page-title/</loc>
-    <lastmod>2018-11-26T11:40:22-05:00</lastmod>
+    <loc>http://linuxbytes.github.io/post/my-first-post/</loc>
+    <lastmod>2018-11-25T16:51:40-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://linux-moles.github.io/</loc>
+    <loc>http://linuxbytes.github.io/archives/</loc>
+    <lastmod>2018-12-04T22:17:34-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://linux-moles.github.io/about/</loc>
-    <lastmod>2018-11-26T12:00:47-05:00</lastmod>
+    <loc>http://linuxbytes.github.io/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://linux-moles.github.io/tags/first/</loc>
-    <lastmod>2018-11-26T11:40:28-05:00</lastmod>
+    <loc>http://linuxbytes.github.io/post/</loc>
+    <lastmod>2018-11-25T16:51:40-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://linux-moles.github.io/</loc>
-    <lastmod>2018-11-26T12:00:47-05:00</lastmod>
+    <loc>http://linuxbytes.github.io/tags/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://linux-moles.github.io/tags/linux-moles/</loc>
-    <lastmod>2018-11-26T11:40:28-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://linux-moles.github.io/posts/</loc>
-    <lastmod>2018-11-26T11:40:28-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://linux-moles.github.io/tags/start/</loc>
-    <lastmod>2018-11-26T11:40:28-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://linux-moles.github.io/tags/</loc>
-    <lastmod>2018-11-26T11:40:28-05:00</lastmod>
+    <loc>http://linuxbytes.github.io/</loc>
+    <lastmod>2018-12-04T22:17:34-05:00</lastmod>
     <priority>0</priority>
   </url>
   

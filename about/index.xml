@@ -1,23 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Abouts on Linux Moles</title>
-    <link>https://linux-moles.github.io/about/</link>
-    <description>Recent content in Abouts on Linux Moles</description>
+    <title>Abouts on EZ-WebCraft</title>
+    <link>http://ezwebcraft.com/about/</link>
+    <description>Recent content in Abouts on EZ-WebCraft</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 26 Nov 2018 12:00:47 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 04 Dec 2018 22:02:58 -0500</lastBuildDate>
     
-	<atom:link href="https://linux-moles.github.io/about/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://ezwebcraft.com/about/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>About Us</title>
-      <link>https://linux-moles.github.io/about/about/</link>
-      <pubDate>Mon, 26 Nov 2018 12:00:47 -0500</pubDate>
+      <title>About</title>
+      <link>http://ezwebcraft.com/about/about/</link>
+      <pubDate>Tue, 04 Dec 2018 22:02:58 -0500</pubDate>
       
-      <guid>https://linux-moles.github.io/about/about/</guid>
-      <description>About Linux Moles Who or What is Linux Moles LinuxMole website is for CLI junkies, enthusiasm user, power user, developer or anyone who love the Linux and the command line world aka the shell. Linux, because its the most open and used OS in the world. Moles, because we live in the tunnels (ssh, terminal, and text world) where we dig into place were most normal don&amp;rsquo;t venture and what proper input.</description>
+      <guid>http://ezwebcraft.com/about/about/</guid>
+      <description>About me
+I am a Linux engineer by day and a Pythoneer by night. I am an ambitious problem solver with a passion for Unix (Solaris, AIX, OSX) / Linux (Slackware, Redhat, Ubuntu, Centos), development and technology as a whole. I am continually evaluating and upgrading my skills so that I can stay at the cutting edge of IT by studying and taking online courses.</description>
     </item>
     
   </channel>
