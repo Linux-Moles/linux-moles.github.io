@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://linux-moles.github.io/news/linux-shell-on-ipad-or-iphone/</loc>
+    <lastmod>2018-12-30T13:13:32-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://linux-moles.github.io/posts/graphical-tree-file-folder/</loc>
     <lastmod>2018-12-26T21:05:08-05:00</lastmod>
   </url>
@@ -47,7 +52,7 @@
   
   <url>
     <loc>https://linux-moles.github.io/</loc>
-    <lastmod>2018-12-26T21:05:08-05:00</lastmod>
+    <lastmod>2018-12-30T13:13:32-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -60,6 +65,12 @@
   <url>
     <loc>https://linux-moles.github.io/tags/ls/</loc>
     <lastmod>2018-12-26T21:05:08-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://linux-moles.github.io/news/</loc>
+    <lastmod>2018-12-30T13:13:32-05:00</lastmod>
     <priority>0</priority>
   </url>
   

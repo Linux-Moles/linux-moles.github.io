@@ -6,10 +6,20 @@
     <description>Recent content on Linux Moles</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 26 Dec 2018 21:05:08 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 30 Dec 2018 13:13:32 -0500</lastBuildDate>
     
 	<atom:link href="https://linux-moles.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Linux Shell on IPad or IPhone</title>
+      <link>https://linux-moles.github.io/news/linux-shell-on-ipad-or-iphone/</link>
+      <pubDate>Sun, 30 Dec 2018 13:13:32 -0500</pubDate>
+      
+      <guid>https://linux-moles.github.io/news/linux-shell-on-ipad-or-iphone/</guid>
+      <description>Hello Fellower Moles, thier is a great tools to have a linux shell on moble devices. The new Linux command line iSH app on iPad or iPhone With iSH Shell is a Linux shell for iOS that uses an x86 emulator to run a simplified version of Alpine Linux on IOS. You can install packages and additional software directly into iSH with the Alpine package manager.
+Why Alpine Linux you say?</description>
+    </item>
     
     <item>
       <title>Graphical Tree File Folder</title>
