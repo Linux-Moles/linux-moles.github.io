@@ -6,8 +6,84 @@
     <description>Recent content in Posts on Linux Moles</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 26 Nov 2018 11:40:28 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 26 Dec 2018 21:05:08 -0500</lastBuildDate>
     <atom:link href="https://linux-moles.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Graphical Tree File Folder</title>
+      <link>https://linux-moles.github.io/posts/graphical-tree-file-folder/</link>
+      <pubDate>Wed, 26 Dec 2018 21:05:08 -0500</pubDate>
+      
+      <guid>https://linux-moles.github.io/posts/graphical-tree-file-folder/</guid>
+      <description>Graphical tree of sub-directories This oneliner command is for a graphical tree of sub-directories, this is an excellent oneliner when you&amp;rsquo;re in need to view the directories in a graphical format. The tree is a recursive directory listing command or program that produces a depth indented listing of files which not generally found on all Linux or Unix systems. The first Tree Unix utility was developed by Steve Baker which includes a verbose of feature and flag option.</description>
+      <content type="html"><![CDATA[
+
+<h2 id="graphical-tree-of-sub-directories">Graphical tree of sub-directories</h2>
+
+<p>This oneliner command is for a graphical tree of sub-directories, this is an excellent oneliner when you&rsquo;re in need to view the directories in a graphical format. The tree is a recursive directory listing command or program that produces a depth indented listing of files which not generally found on all Linux or Unix systems. The first Tree Unix utility was developed by Steve Baker which includes a verbose of feature and flag option. This one-liner is a quick fix for an alternative tree version for portable and easy use.</p>
+
+<p>let break down how this oneliner is build by go deep with the command that is
+being used.</p>
+
+<h3 id="using-ls">using <code>ls</code></h3>
+
+<p>using <code>ls -R</code> does recursively list subdirectories encountered. this will give
+every thing in directory by level of current one</p>
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">root@19472dcaa9be:/var/log# ls -R
+.:
+alternatives.log  apt  bootstrap.log  btmp  dpkg.log  faillog  lastlog  tallylog  wtmp
+
+./apt:
+eipp.log.xz  history.log</code></pre></div>
+<h3 id="using-grep">using <code>grep</code></h3>
+
+<p>Now with the grep command, we grep all line that end with <code>:</code>. using the <code>$</code>we
+grabbing all line with <code>:</code>.</p>
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">root@19472dcaa9be:/var/log# ls -R <span class="p">|</span> grep <span class="s1">&#39;:$&#39;</span>
+.:
+./apt:</code></pre></div>
+<h3 id="using-sed">using <code>sed</code></h3>
+
+<p>using the <code>sed</code> command on the final pipe <code>|</code> we will filter out the needed
+directories and add |- and additional - for each level of the directories it
+sitting in. with <code>sed</code> the flag <code>-e</code> will append the editing commands specified
+by the command argument to the list of commands.</p>
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">root@19472dcaa9be:/var# ls -R <span class="p">|</span> grep <span class="s2">&#34;:</span>$<span class="s2">&#34;</span> <span class="p">|</span> sed -e <span class="s1">&#39;s/:$//&#39;</span> -e <span class="s1">&#39;s/[^-][^\/]*\//--/g&#39;</span> -e <span class="s1">&#39;s/^/ /&#39;</span> -e <span class="s1">&#39;s/-/|/&#39;</span>
+ .
+ <span class="p">|</span>-backups
+ <span class="p">|</span>-cache
+ <span class="p">|</span>---apt
+ <span class="p">|</span>-----archives
+ <span class="p">|</span>-------partial
+ <span class="p">|</span>---debconf
+ <span class="p">|</span>---ldconfig
+ <span class="p">|</span>-lib
+ <span class="p">|</span>---apt
+ <span class="p">|</span>-----lists
+ <span class="p">|</span>-----mirrors
+ <span class="p">|</span>-------partial
+ <span class="p">|</span>-----periodic
+ <span class="p">|</span>---dpkg
+ <span class="p">|</span>-----alternatives
+ <span class="p">|</span>-----info
+ <span class="p">|</span>-----parts
+ <span class="p">|</span>-----triggers
+ <span class="p">|</span>-----updates
+ <span class="p">|</span>---misc
+ <span class="p">|</span>---pam
+ <span class="p">|</span>---systemd
+ <span class="p">|</span>-----deb-systemd-helper-enabled
+ <span class="p">|</span>-------timers.target.wants
+ <span class="p">|</span>-local
+ <span class="p">|</span>-log
+ <span class="p">|</span>---apt
+ <span class="p">|</span>-mail
+ <span class="p">|</span>-opt
+ <span class="p">|</span>-spool
+ <span class="p">|</span>-tmp</code></pre></div>
+<p>credit: unixmonkey842 <a href="https://www.commandlinefu.com/commands/view/710/graphical-tree-of-sub-directories" target="_blank">source</a></p>
+]]></content>
+    </item>
     
     <item>
       <title>First Steps</title>
