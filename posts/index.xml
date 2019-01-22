@@ -6,8 +6,59 @@
 		<description>Recent content in Posts on Linux Moles</description>
 		<generator>Hugo -- gohugo.io</generator>
 		<language>en-us</language>
-		<lastBuildDate>Wed, 26 Dec 2018 21:05:08 -0500</lastBuildDate>
+		<lastBuildDate>Sun, 06 Jan 2019 21:41:19 -0500</lastBuildDate>
 		<atom:link href="https://linux-moles.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>Regex Use Cases</title>
+			<link>https://linux-moles.github.io/posts/regex_use_cases/</link>
+			<pubDate>Sun, 06 Jan 2019 21:41:19 -0500</pubDate>
+			
+			<guid>https://linux-moles.github.io/posts/regex_use_cases/</guid>
+			<description>Regex&amp;rsquo;s some hate some love, but in the end, we all need something productive in our life. Some people hate because the mini-language can be arcane. Others love it because it adds superpowers for text processing. Learning the arcane secrets of regex can be a rough experience, but it doesn&amp;rsquo;t have to.
+so let do excerices a regex enscription for your everyday needs
+Finding Mailing data extract email adresses from some file</description>
+			<content type="html"><![CDATA[
+
+<p>Regex&rsquo;s some hate some love, but in the end, we all need something productive in our life. Some people hate because the mini-language can be arcane. Others love it because it adds superpowers for text processing. Learning the arcane secrets of regex can be a rough experience, but it doesn&rsquo;t have to.</p>
+
+<p>so let do excerices a regex enscription for your everyday needs</p>
+
+<h3 id="finding-mailing-data">Finding Mailing data</h3>
+
+<p>extract email adresses from some file</p>
+<div class="highlight"><pre class="chroma"><code class="language-regex" data-lang="regex">([[:alnum:]_.-]+@[[:alnum:]_.-]+?\.[[:alpha:].]{2,6})</code></pre></div>
+<ol>
+<li><p><code>[:alnum:]</code>: Alphanumeric characters: <code>[:alpha:]</code> and <code>[:digit:]</code>; in the <code>C</code> locale and ASCII character encoding, this is the same as <code>[0-9A-Za-z]</code>.</p></li>
+
+<li><p><code>[ _.+]</code>: One of the characters in the brackets. in which looks for one of
+these characters <code>_.+</code></p></li>
+
+<li><p><code>?</code>: Makes quantifiers &ldquo;lazy&rdquo;</p></li>
+
+<li><p><code>\.</code>: Escapes a special character fpr the <code>.</code></p></li>
+</ol>
+
+<h3 id="check-for-ip-address">Check for IP address</h3>
+
+<p>Look for IPv4 address in files</p>
+
+<pre><code>([0-9]{1,3}\.){3}[0-9]{1,3}
+</code></pre>
+
+<ol>
+<li><p><code>[0-9]</code>: One of the characters in the range from 0 to 9</p></li>
+
+<li><p><code>{1,3}</code>: One to three times, &ldquo;greedy&rdquo;</p></li>
+</ol>
+
+<ul>
+<li><a href="https://www.commandlinefu.com/commands/view/5668/extract-ipv4-addressess-from-file" target="_blank">By: rubenmoran</a></li>
+<li><a href="https://www.commandlinefu.com/commands/view/2431/extract-email-adresses-from-some-file-or-any-other-pattern" target="_blank">By: wires</a></li>
+<li><a href="https://www.gnu.org/software/grep/manual/html_node/Character-Classes-and-Bracket-Expressions.html" target="_blank">GNU Grep</a></li>
+</ul>
+]]></content>
+		</item>
 		
 		<item>
 			<title>Graphical Tree File Folder</title>
@@ -159,6 +210,33 @@ directories with <code>--</code> as levels.</p>
  <span class="p">|</span>-spool
  <span class="p">|</span>-tmp</code></pre></div>
 <p>credit: unixmonkey842 <a href="https://www.commandlinefu.com/commands/view/710/graphical-tree-of-sub-directories" target="_blank">source</a></p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>Cat Command</title>
+			<link>https://linux-moles.github.io/posts/cat-command/</link>
+			<pubDate>Sun, 16 Dec 2018 16:48:46 -0500</pubDate>
+			
+			<guid>https://linux-moles.github.io/posts/cat-command/</guid>
+			<description>The cat is known for reading files sequentially and display its output. it maybe be a simple command line tool, but it has many uses. cat is know a known tool throght the unix history and has been port over into GNU coreutils. One important factor about cat is that since because it does not require the files to consist of lines of text, but works with any sort of data.</description>
+			<content type="html"><![CDATA[<p>The cat is known for reading files sequentially and display its output. it
+maybe be a simple command line tool, but it has many uses. cat is know a known
+tool throght the unix history and has been port over into GNU coreutils. One
+important factor about cat is that since because it does not require the files to
+consist of lines of text, but works with any sort of data.</p>
+
+<p>here are of the option that this tool can do beside display information.</p>
+
+<ul>
+<li><code>-b</code> (GNU: &ndash;number-nonblank), number non-blank output lines</li>
+<li><code>-e</code> implies -v but also display end-of-line characters as $ (GNU only: -E the same, but without implying -v)</li>
+<li><code>-n</code> (GNU: &ndash;number), number all output lines</li>
+<li><code>-s</code> (GNU: &ndash;squeeze-blank), squeeze multiple adjacent blank lines</li>
+<li><code>-t</code> implies -v, but also display tabs as ^I (GNU: -T the same, but without implying -v)</li>
+<li><code>-u</code> use unbuffered I/O for stdout. POSIX does not specify the behavior without this option.</li>
+<li><code>-v</code> (GNU: &ndash;show-nonprinting), displays nonprinting characters, except for tabs and the end of line character</li>
+</ul>
 ]]></content>
 		</item>
 		

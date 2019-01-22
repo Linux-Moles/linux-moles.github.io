@@ -21,5 +21,15 @@
 Why Alpine Linux you say?</description>
     </item>
     
+    <item>
+      <title>IOS Linux Shell</title>
+      <link>https://linux-moles.github.io/news/ios-linux-shell/</link>
+      <pubDate>Sun, 09 Dec 2018 20:59:07 -0500</pubDate>
+      
+      <guid>https://linux-moles.github.io/news/ios-linux-shell/</guid>
+      <description>The beauty of the shell is that is can be used on any device even on mobile. there is a great project called iSH in which you can run a container Linux on IOS. This is an excellent project that will open the doors for many users. We hope to see more of the shell get implements on more device.
+source</description>
+    </item>
+    
   </channel>
 </rss>
