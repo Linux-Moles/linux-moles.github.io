@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Posts on Linux Moles</title>
+		<link>https://linux-moles.github.io/posts/</link>
+		<description>Recent content in Posts on Linux Moles</description>
+		<generator>Hugo -- gohugo.io</generator>
+		<language>en-us</language>
+		<lastBuildDate>Wed, 26 Dec 2018 21:05:08 -0500</lastBuildDate>
+		<atom:link href="https://linux-moles.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>Graphical Tree File Folder</title>
+			<link>https://linux-moles.github.io/posts/graphical-tree-file-folder/</link>
+			<pubDate>Wed, 26 Dec 2018 21:05:08 -0500</pubDate>
+			
+			<guid>https://linux-moles.github.io/posts/graphical-tree-file-folder/</guid>
+			<description>Graphical tree of sub-directories This oneliner command is for a graphical tree of sub-directories, this is an excellent oneliner when you&amp;rsquo;re in need to view the directories in a graphical format. The tree is a recursive directory listing command or program that produces a depth indented listing of files which not generally found on all Linux or Unix systems. The first Tree Unix utility was developed by Steve Baker which includes a verbose of feature and flag option.</description>
+			<content type="html"><![CDATA[
+
+<h2 id="graphical-tree-of-sub-directories">Graphical tree of sub-directories</h2>
+
+<p>This oneliner command is for a graphical tree of sub-directories, this is an excellent oneliner when you&rsquo;re in need to view the directories in a graphical format. The tree is a recursive directory listing command or program that produces a depth indented listing of files which not generally found on all Linux or Unix systems. The first Tree Unix utility was developed by Steve Baker which includes a verbose of feature and flag option. This one-liner is a quick fix for an alternative tree version for portable and easy use.</p>
+
+<p>let break down how this oneliner is build by go deep with the command that is
+being used.</p>
+
+<h3 id="using-ls">using <code>ls</code></h3>
+
+<p>using <code>ls -R</code> does recursively list subdirectories encountered. this will give
+every thing in directory by level of current one</p>
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">root@19472dcaa9be:/var/log# ls -R
+.:
+alternatives.log  apt  bootstrap.log  btmp  dpkg.log  faillog  lastlog  tallylog  wtmp
+
+./apt:
+eipp.log.xz  history.log</code></pre></div>
+<h3 id="using-grep">using <code>grep</code></h3>
+
+<p>Now with the grep command, we grep all line that end with <code>:</code>. using the <code>$</code>we
+grabbing all line with <code>:</code>.</p>
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">root@19472dcaa9be:/var/log# ls -R <span class="p">|</span> grep <span class="s1">&#39;:$&#39;</span>
+.:
+./apt:</code></pre></div>
+<h3 id="using-sed">using <code>sed</code></h3>
+
+<p>using the <code>sed</code> command on the final pipe <code>|</code> we will filter out the needed
+directories and add |- and additional - for each level of the directories it
+sitting in. with <code>sed</code> the flag <code>-e</code> will append the editing commands specified
+by the command argument to the list of commands.</p>
+
+<p>First let remove the <code>:</code> from the list directories.</p>
+
+<pre><code>root@80edb8b49c29:/var#  ls -R | grep &quot;:$&quot; | sed -e 's/:$//'
+.
+./backups
+./cache
+./cache/apt
+./cache/apt/archives
+./cache/apt/archives/partial
+./cache/debconf
+./cache/ldconfig
+./lib
+./lib/apt
+./lib/apt/lists
+./lib/apt/mirrors
+./lib/apt/mirrors/partial
+./lib/apt/periodic
+./lib/dpkg
+./lib/dpkg/alternatives
+./lib/dpkg/info
+./lib/dpkg/parts
+./lib/dpkg/triggers
+./lib/dpkg/updates
+./lib/misc
+./lib/pam
+./lib/systemd
+./lib/systemd/deb-systemd-helper-enabled
+./lib/systemd/deb-systemd-helper-enabled/timers.target.wants
+./local
+./log
+./log/apt
+./mail
+./opt
+./spool
+./tmp
+</code></pre>
+
+<p>now let with the regex <code>s/[^-][^\/]*\//--/g</code> from sed, replace all <code>.</code> and <code>/</code>
+and stop with last <code>/</code> with a <code>--</code> when in case with add additionalm base on
+how many dirctory each lines has.</p>
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">root@80edb8b49c29:/var# ls -R <span class="p">|</span> grep <span class="s2">&#34;:</span>$<span class="s2">&#34;</span> <span class="p">|</span> sed -e <span class="s1">&#39;s/:$//&#39;</span> -e <span class="s1">&#39;s/[^-][^\/]*\//--/g&#39;</span>
+.
+--backups
+--cache
+----apt
+------archives
+--------partial
+----debconf
+----ldconfig
+--lib
+----apt
+------lists
+------mirrors
+--------partial
+------periodic
+----dpkg
+------alternatives
+------info
+------parts
+------triggers
+------updates
+----misc
+----pam
+----systemd
+------deb-systemd-helper-enabled
+--------timers.target.wants
+--local
+--log
+----apt
+--mail
+--opt
+--spool
+--tmp</code></pre></div>
+<p>finally we use this two sed regex <code>-e 's/^/ /' -e 's/-/|/'</code> and add spacing and
+<code>|</code> to the begining of the list. thier you go we have a quick tree of the
+directories with <code>--</code> as levels.</p>
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">root@19472dcaa9be:/var# ls -R <span class="p">|</span> grep <span class="s2">&#34;:</span>$<span class="s2">&#34;</span> <span class="p">|</span> sed -e <span class="s1">&#39;s/:$//&#39;</span> -e <span class="s1">&#39;s/[^-][^\/]*\//--/g&#39;</span> -e <span class="s1">&#39;s/^/ /&#39;</span> -e <span class="s1">&#39;s/-/|/&#39;</span>
+ .
+ <span class="p">|</span>-backups
+ <span class="p">|</span>-cache
+ <span class="p">|</span>---apt
+ <span class="p">|</span>-----archives
+ <span class="p">|</span>-------partial
+ <span class="p">|</span>---debconf
+ <span class="p">|</span>---ldconfig
+ <span class="p">|</span>-lib
+ <span class="p">|</span>---apt
+ <span class="p">|</span>-----lists
+ <span class="p">|</span>-----mirrors
+ <span class="p">|</span>-------partial
+ <span class="p">|</span>-----periodic
+ <span class="p">|</span>---dpkg
+ <span class="p">|</span>-----alternatives
+ <span class="p">|</span>-----info
+ <span class="p">|</span>-----parts
+ <span class="p">|</span>-----triggers
+ <span class="p">|</span>-----updates
+ <span class="p">|</span>---misc
+ <span class="p">|</span>---pam
+ <span class="p">|</span>---systemd
+ <span class="p">|</span>-----deb-systemd-helper-enabled
+ <span class="p">|</span>-------timers.target.wants
+ <span class="p">|</span>-local
+ <span class="p">|</span>-log
+ <span class="p">|</span>---apt
+ <span class="p">|</span>-mail
+ <span class="p">|</span>-opt
+ <span class="p">|</span>-spool
+ <span class="p">|</span>-tmp</code></pre></div>
+<p>credit: unixmonkey842 <a href="https://www.commandlinefu.com/commands/view/710/graphical-tree-of-sub-directories" target="_blank">source</a></p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>First Steps</title>
+			<link>https://linux-moles.github.io/posts/first-step/</link>
+			<pubDate>Mon, 26 Nov 2018 11:40:28 -0500</pubDate>
+			
+			<guid>https://linux-moles.github.io/posts/first-step/</guid>
+			<description>Hello, in shell echo &amp;quot;Hello World,&amp;quot;. Hello, fellow command line users. First I want to say thank you for visiting this site. This site is for anyone who enjoys working and using the command line aka shell. Soon we are going to add tutorials, talks, news, and man others thing about the command line for any who lives or loves using the command line. Gui is a great interface, but as we know the command line offers more precision and power than any other interface known to humans as this current state.</description>
+			<content type="html"><![CDATA[<p>Hello, in shell <code>echo &quot;Hello World,&quot;</code>. Hello, fellow command line users. First I want to say thank you for visiting this site. This site is for anyone who enjoys working and using the command line aka shell. Soon we are going to add tutorials, talks, news, and man others thing about the command line for any who lives or loves using the command line. Gui is a great interface, but as we know the command line offers more precision and power than any other interface known to humans as this current state. As many say or as you see on the internet &ldquo;Where there is a shell there is a way.&rdquo; Let&rsquo;s explore why this the case, many have argued about GUI and having graphics interface to interact, but there is a reason why we, as a power user, developer, admin or as many walks of life return to the command line. Let discussion quickly a few reasons why, well let&rsquo;s talk why many shy always from this interface.</p>
+
+<ul>
+<li><p>Shell interface requires knowledge of the tools or system your using in which can discourage many.</p></li>
+
+<li><p>People find the command line confusing as it needs a user to be explicit in their usages.</p></li>
+
+<li><p>The command line can be very destructive in nature, which can cause a xmajor issue on users who are not familiar.</p></li>
+
+<li><p>Not all shells interface are the same which can confuse many users.</p></li>
+</ul>
+
+<p>Now we realize the challenges with the command line, lets weight out the benefits of using it and why so many returns to it.</p>
+
+<ul>
+<li><p>First, the command line offers in almost all cases, the command line is much faster and easier to use for expirence and pwoer users</p></li>
+
+<li><p>for most complex tasks, the command line or shell can be scripted to automate things</p></li>
+</ul>
+]]></content>
+		</item>
+		
+	</channel>
+</rss>
