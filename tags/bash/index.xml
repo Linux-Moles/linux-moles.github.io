@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>News on Linux Moles</title>
-    <link>https://linux-moles.github.io/news/</link>
-    <description>Recent content in News on Linux Moles</description>
+    <title>Bash on Linux Moles</title>
+    <link>https://linux-moles.github.io/tags/bash/</link>
+    <description>Recent content in Bash on Linux Moles</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 22 Jan 2019 19:01:53 -0500</lastBuildDate>
     
-	<atom:link href="https://linux-moles.github.io/news/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://linux-moles.github.io/tags/bash/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -19,16 +19,6 @@
       <guid>https://linux-moles.github.io/news/bash-5.0/</guid>
       <description>Hello power users, the fifth release of bash is focused on new shell variables and with a lot of significant bug fixes which is fantastic!!! It also The bash was first released in 1989 and was created for the GNU project as a replacement for their Bourne shell. It is capable of performing functions such as interactive command line editing, and job control on architectures that support it
 comments from the mailing list</description>
-    </item>
-    
-    <item>
-      <title>Linux Shell on IPad or IPhone</title>
-      <link>https://linux-moles.github.io/news/linux-shell-on-ipad-or-iphone/</link>
-      <pubDate>Sun, 30 Dec 2018 13:13:32 -0500</pubDate>
-      
-      <guid>https://linux-moles.github.io/news/linux-shell-on-ipad-or-iphone/</guid>
-      <description>Hello Fellower Moles, thier is a great tools that haves a linux shell on moble devices. The new Linux command line iSH app on iPad or iPhone. With iSH Shell is a Linux shell for iOS that uses an x86 emulator to run a simplified version of Alpine Linux on IOS. You can install packages and additional software directly into iSH with the Alpine package manager.
-Why Alpine Linux you say?</description>
     </item>
     
   </channel>

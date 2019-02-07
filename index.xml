@@ -6,10 +6,31 @@
     <description>Recent content on Linux Moles</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 30 Dec 2018 13:13:32 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 22 Jan 2019 19:01:53 -0500</lastBuildDate>
     
 	<atom:link href="https://linux-moles.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Bash 5.0 Release</title>
+      <link>https://linux-moles.github.io/news/bash-5.0/</link>
+      <pubDate>Tue, 22 Jan 2019 19:01:53 -0500</pubDate>
+      
+      <guid>https://linux-moles.github.io/news/bash-5.0/</guid>
+      <description>Hello power users, the fifth release of bash is focused on new shell variables and with a lot of significant bug fixes which is fantastic!!! It also The bash was first released in 1989 and was created for the GNU project as a replacement for their Bourne shell. It is capable of performing functions such as interactive command line editing, and job control on architectures that support it
+comments from the mailing list</description>
+    </item>
+    
+    <item>
+      <title>Regex Use Cases</title>
+      <link>https://linux-moles.github.io/posts/regex_use_cases/</link>
+      <pubDate>Sun, 06 Jan 2019 21:41:19 -0500</pubDate>
+      
+      <guid>https://linux-moles.github.io/posts/regex_use_cases/</guid>
+      <description>Regex&amp;rsquo;s some hate some love, but in the end, we all need something productive in our life. Some people hate because the mini-language can be arcane. Others love it because it adds superpowers for text processing. Learning the arcane secrets of regex can be a rough experience, but it doesn&amp;rsquo;t have to.
+so let do some exercises on regex like emails and IP for your everyday technical needs
+Finding Mailing data extract email adresses from some file</description>
+    </item>
     
     <item>
       <title>Linux Shell on IPad or IPhone</title>
@@ -17,7 +38,7 @@
       <pubDate>Sun, 30 Dec 2018 13:13:32 -0500</pubDate>
       
       <guid>https://linux-moles.github.io/news/linux-shell-on-ipad-or-iphone/</guid>
-      <description>Hello Fellower Moles, thier is a great tools to have a linux shell on moble devices. The new Linux command line iSH app on iPad or iPhone With iSH Shell is a Linux shell for iOS that uses an x86 emulator to run a simplified version of Alpine Linux on IOS. You can install packages and additional software directly into iSH with the Alpine package manager.
+      <description>Hello Fellower Moles, thier is a great tools that haves a linux shell on moble devices. The new Linux command line iSH app on iPad or iPhone. With iSH Shell is a Linux shell for iOS that uses an x86 emulator to run a simplified version of Alpine Linux on IOS. You can install packages and additional software directly into iSH with the Alpine package manager.
 Why Alpine Linux you say?</description>
     </item>
     
@@ -28,6 +49,15 @@ Why Alpine Linux you say?</description>
       
       <guid>https://linux-moles.github.io/posts/graphical-tree-file-folder/</guid>
       <description>Graphical tree of sub-directories This oneliner command is for a graphical tree of sub-directories, this is an excellent oneliner when you&amp;rsquo;re in need to view the directories in a graphical format. The tree is a recursive directory listing command or program that produces a depth indented listing of files which not generally found on all Linux or Unix systems. The first Tree Unix utility was developed by Steve Baker which includes a verbose of feature and flag option.</description>
+    </item>
+    
+    <item>
+      <title>Cat Command</title>
+      <link>https://linux-moles.github.io/posts/cat-command/</link>
+      <pubDate>Sun, 16 Dec 2018 16:48:46 -0500</pubDate>
+      
+      <guid>https://linux-moles.github.io/posts/cat-command/</guid>
+      <description>The cat is known for reading files sequentially and display its output. it maybe be a simple command line tool, but it has many uses. cat is know a known tool throght the unix history and has been port over into GNU coreutils. One important factor about cat is that since because it does not require the files to consist of lines of text, but works with any sort of data.</description>
     </item>
     
     <item>

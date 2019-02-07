@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://linux-moles.github.io/news/bash-5.0/</loc>
+    <lastmod>2019-01-22T19:01:53-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://linux-moles.github.io/posts/regex_use_cases/</loc>
+    <lastmod>2019-01-06T21:41:19-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://linux-moles.github.io/news/linux-shell-on-ipad-or-iphone/</loc>
     <lastmod>2018-12-30T13:13:32-05:00</lastmod>
   </url>
@@ -10,6 +20,11 @@
   <url>
     <loc>https://linux-moles.github.io/posts/graphical-tree-file-folder/</loc>
     <lastmod>2018-12-26T21:05:08-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://linux-moles.github.io/posts/cat-command/</loc>
+    <lastmod>2018-12-16T16:48:46-05:00</lastmod>
   </url>
   
   <url>
@@ -34,7 +49,37 @@
   </url>
   
   <url>
+    <loc>https://linux-moles.github.io/tags/bash/</loc>
+    <lastmod>2019-01-22T19:01:53-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://linux-moles.github.io/tags/cat/</loc>
+    <lastmod>2018-12-16T16:48:46-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://linux-moles.github.io/command-line/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://linux-moles.github.io/tags/data/</loc>
+    <lastmod>2018-12-16T16:48:46-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://linux-moles.github.io/tags/emails/</loc>
+    <lastmod>2019-01-06T21:41:19-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://linux-moles.github.io/tags/files/</loc>
+    <lastmod>2018-12-16T16:48:46-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -51,8 +96,14 @@
   </url>
   
   <url>
+    <loc>https://linux-moles.github.io/tags/ip/</loc>
+    <lastmod>2019-01-06T21:41:19-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://linux-moles.github.io/</loc>
-    <lastmod>2018-12-30T13:13:32-05:00</lastmod>
+    <lastmod>2019-01-22T19:01:53-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -70,19 +121,43 @@
   
   <url>
     <loc>https://linux-moles.github.io/news/</loc>
-    <lastmod>2018-12-30T13:13:32-05:00</lastmod>
+    <lastmod>2019-01-22T19:01:53-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://linux-moles.github.io/posts/</loc>
-    <lastmod>2018-12-26T21:05:08-05:00</lastmod>
+    <lastmod>2019-01-06T21:41:19-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://linux-moles.github.io/tags/regex/</loc>
+    <lastmod>2019-01-06T21:41:19-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://linux-moles.github.io/tags/search/</loc>
+    <lastmod>2019-01-06T21:41:19-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://linux-moles.github.io/tags/sed/</loc>
     <lastmod>2018-12-26T21:05:08-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://linux-moles.github.io/tags/shell/</loc>
+    <lastmod>2019-01-22T19:01:53-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://linux-moles.github.io/tags/simple/</loc>
+    <lastmod>2018-12-16T16:48:46-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -94,7 +169,13 @@
   
   <url>
     <loc>https://linux-moles.github.io/tags/</loc>
-    <lastmod>2018-11-26T11:40:28-05:00</lastmod>
+    <lastmod>2019-01-22T19:01:53-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://linux-moles.github.io/tags/updates/</loc>
+    <lastmod>2019-01-22T19:01:53-05:00</lastmod>
     <priority>0</priority>
   </url>
   
